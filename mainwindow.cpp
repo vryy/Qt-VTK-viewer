@@ -7,6 +7,12 @@
 
 #include <vtkDataSetReader.h>
 
+namespace Kratos
+{
+
+namespace Qt
+{
+
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -56,3 +62,7 @@ void MainWindow::openFile(const QString& fileName)
         ui->sceneWidget->addDataSet(reader->GetOutput());
     }
 }
+
+} // end namespace Qt
+
+} // end namespace Kratos

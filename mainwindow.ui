@@ -31,7 +31,7 @@
      <number>0</number>
     </property>
     <item row="0" column="0">
-     <widget class="SceneWidget" name="sceneWidget"/>
+     <widget class="Kratos::Qt::SceneWidget" name="sceneWidget"/>
     </item>
    </layout>
   </widget>
@@ -126,7 +126,7 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>SceneWidget</class>
+   <class>Kratos::Qt::SceneWidget</class>
    <extends>QOpenGLWidget</extends>
    <header>scenewidget.h</header>
    <slots>

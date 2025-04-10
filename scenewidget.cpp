@@ -6,6 +6,12 @@
 #include <vtkProperty.h>
 #include <vtkRenderWindowInteractor.h>
 
+namespace Kratos
+{
+
+namespace Qt
+{
+
 SceneWidget::SceneWidget(QWidget* parent)
     : QVTKOpenGLNativeWidget(parent)
 {
@@ -61,3 +67,7 @@ void SceneWidget::zoomToExtent()
 
     renderWindow()->Render();
 }
+
+} // end namespace Qt
+
+} // end namespace Kratos

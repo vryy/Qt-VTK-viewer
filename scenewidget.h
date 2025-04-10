@@ -6,6 +6,12 @@
 #include <vtkRenderer.h>
 #include <vtkSmartPointer.h>
 
+namespace Kratos
+{
+
+namespace Qt
+{
+
 class SceneWidget : public QVTKOpenGLNativeWidget {
     Q_OBJECT
 public:
@@ -27,5 +33,9 @@ public slots:
 private:
     vtkSmartPointer<vtkRenderer> m_renderer;
 };
+
+} // end namespace Qt
+
+} // end namespace Kratos
 
 #endif // SCENEWIDGET_H

@@ -7,6 +7,12 @@ namespace Ui {
 class MainWindow;
 }
 
+namespace Kratos
+{
+
+namespace Qt
+{
+
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
@@ -31,5 +37,9 @@ protected:
 private:
     Ui::MainWindow* ui;
 };
+
+} // end namespace Qt
+
+} // end namespace Kratos
 
 #endif // MAINWINDOW_H
